@@ -4,22 +4,21 @@
         <title>CSE110 Lab 2 - Trey Shneour's Meeting Minutes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="https://github.com/tshneour/Lab2_Starter/favicon.ico" />
+        <link rel="icon" href="https://github.com/tshneour/Lab2_Starter/raw/main/favicon.ico" />
 
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li><a href="#main-text">Place</a></li>
-                    <li><a href="#">Place</a></li>
-                    <li><a href="#">Place</a></li>
+                    <li><a href="#main-text">Kickoff Meeting</a></li>
+                    <li><a href="#Rick">RickItUp</a></li>
                   </ul>
     
             </nav>
         </header>
         <hr>
-        <div class="main-text">
+        <div id="main-text">
             <main>
                 <h1>Kickoff Meeting</h1>
                 <h2>Getting Started</h2>
@@ -38,7 +37,7 @@
                     </ol>
                 </section>
 
-                <section>
+                <section class="Agenda">
                     <h3>Agenda</h3>
                     <details>
                         <summary>Expectations</summary>
@@ -106,18 +105,68 @@
                         </p>
                         <img
                             class="logo"
-                            src="https://github.com/tshneour/Lab2_Starter/logo.jpg"
+                            src="https://raw.githubusercontent.com/tshneour/Lab2_Starter/main/logo.jpg"
                             alt="Bars representing a sorted list with 14! below" />
                         <br />
                         <video controls width="250">
-                            <source src="https://github.com/tshneour/Lab2_Starter/rick.mp4" type="video/mp4" />
+                            <source src="https://github.com/tshneour/Lab2_Starter/raw/main/rick.mp4" type="video/mp4" />
                             </video>
                         <br />
                         <figure>
                             <figcaption>Get Rick'd</figcaption>
-                            <audio controls src="https://github.com/tshneour/Lab2_Starter/rick.mp3"></audio>
+                            <audio controls src="https://github.com/tshneour/Lab2_Starter/raw/main/rick.mp3"></audio>
                             </figure>
                 </section>
+                <div id="Rick"></div>
+                <span style="opacity: 0;">GetRolled</span>
+                <form>
+                    <fieldset>
+                        <textarea rows="2" cols="50">This is an epic survey please fill it out.
+                            </textarea>
+                            <br />
+                      <input type="radio" id="Skibid" name="Ohio" value="K" />
+                      <label for="Skibid">Skibidi</label><br />
+                  
+                      <input type="radio" id="Sigma" name="Ohio" value="S" />
+                      <label for="Sigma">Sigma</label><br />
+                  
+                      <input type="radio" id="Rizz" name="Ohio" value="M" />
+                      <label for="Rizz">Rizz</label>
+                        <br />
+                      <input type="button" value="Press if W Cotton-Eye Joe Skibidi" />
+                        <br />
+                        <label >2+2=3</label>
+                      <input type="checkbox" value="2+2=3" />
+                      <label >9+10=21</label>
+                      <input type="checkbox" value="9+10=21" />
+                      <label >5+5=10</label>
+                      <input type="checkbox" value="5+5=10" />
+                        <br />
+                      <input type="date" value="When is your birthday?" />
+                      <br />
+                      <label >What are the 3 numbers on the back?</label>
+                      <input type="text" value="" />
+                        <br />
+                      <label for="Ohios">Choose one:</label>
+                        <input list="Ohio" id="Ohios" name="Ohios" />
+
+                        <datalist id="Ohio">
+                            <option value="AmongUs"></option>
+                            <option value="Crewmate"></option>
+                            <option value="Imposter"></option>
+                        </datalist>
+                            <br />
+                        <label for="rot-select">Choose a pet:</label>
+
+                            <select name="rotting" id="rot-select">
+                            <option value="">Please choose best rotmaxxing technique</option>
+                            <option value="subway">Subway Surfers</option>
+                            <option value="gaming">24 hour gaming</option>
+                            <option value="league">League of Legends</option>
+                            <option value="Skibidi">SkibidiOhioRizz</option>
+                            </select>
+                    </fieldset>
+                  </form>
             </main>
         </div>
 
