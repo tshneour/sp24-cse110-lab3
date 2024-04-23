@@ -3,7 +3,7 @@ name: Task
 about: Assign Task
 title: "[TASK]"
 labels: CSS
-assignees: ''
+assignees: tshneour
 
 ---
 
@@ -11,4 +11,4 @@ assignees: ''
 A clear and concise description of what will be added.
 
 **Additional context**
-Add any other context or screenshots about the task.
+N/A
