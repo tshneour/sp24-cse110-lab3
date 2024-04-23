@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://tshneour.github.io/Lab2_Starter/
+https://tshneour.github.io/sp24-cse110-lab3/
