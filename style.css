@@ -1,0 +1,69 @@
+header {
+    font-size: 1.5em;
+    --text-color: color-mix(in srgb, #3db7c9 50%, white);
+}
+
+h3:has(+ p) {
+    color: color-mix(in srgb, #3db7c9 50%, white);
+}
+
+p, ol, summary {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    color: var(--text-color, rgb(10, 10, 10));
+}
+
+li {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1.75pc;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1in;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.ex {
+    font-size: 3ex;
+}
+
+/* 
+* Format entire document
+*/
+.doc {
+    background-color: color(from hsl(35 0 35) srgb r g b);
+}
+
+.under {
+    text-decoration: yellow underline;
+}
+
+.strike {
+    text-decoration: rgba(145, 19, 19, 50%) line-through;
+}
+
+/*
+* Format header
+*/
+#header {
+    background-color: #363333;
+}
+
+#footer {
+    background-color: hsla(0, 11%, 16%, 0.5);
+}
+
