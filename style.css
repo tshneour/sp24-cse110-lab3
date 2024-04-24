@@ -1,6 +1,30 @@
-header {
+* {
+    opacity: 100%;
+}
+
+/*
+* Format header
+*/
+#header {
     font-size: 1.5em;
     --text-color: color-mix(in srgb, #3db7c9 50%, white);
+    background-color: #363333;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: -10px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 100px;
+    border-style: inset;
+    border-color: black;
+    border-width: 10px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: sticky;
 }
 
 h3:has(+ p) {
@@ -41,6 +65,10 @@ h1 {
     font-size: 3ex;
 }
 
+a[class] {
+    text-decoration: red underline;
+}
+
 /* 
 * Format entire document
 */
@@ -56,14 +84,59 @@ h1 {
     text-decoration: rgba(145, 19, 19, 50%) line-through;
 }
 
-/*
-* Format header
-*/
-#header {
-    background-color: #363333;
-}
-
 #footer {
     background-color: hsla(0, 11%, 16%, 0.5);
+    margin: 5px;
+    padding: 0px;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
 }
 
+.survey {
+    position: static;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100px;
+    justify-content: flex-start;
+}
+
+.link {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.media {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: black;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.item {
+    border-width: 10px;
+    padding: 100px;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    min-width: 50px;
+}
+
+.button {
+    background-color: white;
+    &:hover {
+      background-color: black;
+    }
+}
+
+#main-text {
+    margin: auto;
+}
