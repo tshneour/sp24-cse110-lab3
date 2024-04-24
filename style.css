@@ -1,5 +1,8 @@
+/*
+* Set everything to 99% opacity because why not
+*/
 * {
-    opacity: 100%;
+    opacity: 99%;
 }
 
 /*
@@ -27,10 +30,16 @@
     position: sticky;
 }
 
+/*
+* Turn p elements blue that are siblings with h3
+*/
 h3:has(+ p) {
     color: color-mix(in srgb, #3db7c9 50%, white);
 }
 
+/*
+* Set font and color for all text
+*/
 p, ol, summary {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -38,52 +47,68 @@ p, ol, summary {
     color: var(--text-color, rgb(10, 10, 10));
 }
 
+/*
+*  Messing with em unit
+*/
 li {
     font-size: 1.25em;
 }
 
+/*
+* Messing with pc unit
+*/
 h3 {
     font-size: 1.75pc;
     text-align: center;
 }
 
+/*
+* Messing with rem unit
+*/
 h2 {
     font-size: 2rem;
     text-align: center;
 }
 
+/*
+* Messing with inches unit
+*/
 h1 {
     font-size: 1in;
     text-align: center;
 }
 
-.title {
-    text-align: center;
-}
-
+/*
+* Messing with ex unit
+*/
 .ex {
     font-size: 3ex;
 }
 
+/*
+* Testing selector to make underlines
+*/
 a[class] {
     text-decoration: red underline;
 }
 
-/* 
-* Format entire document
+/*
+* Testing class selector
 */
-.doc {
-    background-color: color(from hsl(35 0 35) srgb r g b);
-}
-
 .under {
     text-decoration: yellow underline;
 }
 
+/*
+* Trying out test-decoration
+*/
 .strike {
     text-decoration: rgba(145, 19, 19, 50%) line-through;
 }
 
+/*
+* Configuring footer container
+*/
 #footer {
     background-color: hsla(0, 11%, 16%, 0.5);
     margin: 5px;
@@ -94,10 +119,17 @@ a[class] {
     border-radius: 10px;
 }
 
+/*
+* Configuring survey container
+*/
 .survey {
     position: static;
+    display: block;
 }
 
+/*
+* Configuring link layout
+*/
 .links {
     display: flex;
     flex-direction: row;
@@ -106,12 +138,18 @@ a[class] {
     justify-content: flex-start;
 }
 
+/*
+* Setting specifications for individual links
+*/
 .link {
     width: 50px;
     height: 50px;
     margin: auto;
 }
 
+/*
+* Configuring grid for media
+*/
 .media {
     display: grid;
     grid-auto-flow: column;
@@ -120,6 +158,9 @@ a[class] {
     grid-gap: 10px;
 }
 
+/*
+* Configuring items in media to work with the grid
+*/
 .item {
     border-width: 10px;
     padding: 100px;
@@ -130,13 +171,86 @@ a[class] {
     min-width: 50px;
 }
 
+/*
+* Adding interactable effects to the button in survey
+*/
 .button {
     background-color: white;
     &:hover {
-      background-color: black;
+      background-color: rgb(186, 182, 182);
+    }
+    &:active {
+        width: 200px;
+        height: 15px;
+        background-color: rgb(0, 0, 0);
+      }
+}
+
+/*
+* Setting margins
+*/
+#main-text {
+    margin: auto;
+}
+
+/*
+* Setting display of radio buttons
+*/
+#Rizz {
+    display: inline-block;
+}
+
+/*
+* Testing selector
+*/
+ul > li {
+    color: lightcoral;
+}
+
+/*
+* Testing selector
+*/
+#intro ~ h2 {
+    color: white;
+}
+
+/*
+* Testing selector
+*/
+li strong {
+    font-size: 25px;
+    color:red;
+}
+
+/*
+* Testing selector
+*/
+a.link {
+    background-color: navy;
+    width: 90px;
+}
+
+/*
+* Testing selector
+*/
+h1 + h2 {
+    background-color: #3db7c9;
+}
+
+/*
+* Configuring font-sizes when the user is on a small screen (phone)
+*/
+@media screen and (max-width: 750px) and (orientation:portrait) {
+    body {
+        font-size: 10px;
     }
 }
 
-#main-text {
-    margin: auto;
+/*
+* Configuring font-sizes when the user is on a small screen (phone)
+*/
+@media screen and (max-width: 800px) and (max-height: 800px) and (orientation:landscape) {
+    body {
+        font-size: 10px;
+    }
 }
