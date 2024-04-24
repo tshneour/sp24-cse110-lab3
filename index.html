@@ -9,15 +9,14 @@
     </head>
     <body class="content">
         <header id="header">
-            <nav>
-                <ul>
-                    <li><a href="#main-text">Kickoff Meeting</a></li>
-                    <li><a href="#Rick">RickItUp</a></li>
-                  </ul>
+            <nav class="links">
+                <a class ="link" href="#main-text">Kickoff Meeting</a>
+                <a class ="link" href="#Agenda">RickItUp</a>
+                <a class ="link" href="#Rick">RickItUp</a>
     
             </nav>
-            <hr>
         </header>
+        <hr>
         <div id="main-text">
             <main>
                 <div id="intro">
@@ -39,7 +38,7 @@
                     </ol>
                 </section>
 
-                <section class="Agenda">
+                <section id="Agenda">
                     <h3>Agenda</h3>
                     <details>
                         <summary>Expectations</summary>
@@ -71,7 +70,7 @@
                     <h3>Notes</h3>
                     <h4>Unfinished Business</h4>
                     <ul>
-                        <li>Still need to decide on a team name (<i>any new ideas?</i>)</li>
+                        <li><span class="strike">Still need to decide on a team name (<i>any new ideas?</i></span>)</li>
                         <li>Idea: <i>Bozosort</i></li>
                     </ul>
                     <h4>New Business</h4>
@@ -90,7 +89,7 @@
                     </ul>
                     <h4>Miscellaneous</h4>
                     <ul>
-                        <li><strong>Team bonding meeting scheduled for Monday 6:30PM</strong></li>
+                        <li><span class="under"><strong>Team bonding meeting scheduled for Monday 6:30PM</strong></span></li>
                         <li>Where is the team contract?
                             <ul>
                                 <li>
@@ -106,24 +105,24 @@
                     <p>Here is a mock-up team logo we made:<br />
                         <i>"Bars representing a sorted list with 14! below"</i>
                         </p>
-                        <img
-                            class="logo"
-                            src="https://raw.githubusercontent.com/tshneour/Lab2_Starter/main/logo.jpg"
-                            alt="Bars representing a sorted list with 14! below" />
-                        <br />
-                        <video controls width="250">
-                            <source src="https://github.com/tshneour/Lab2_Starter/raw/main/rick.mp4" type="video/mp4" />
-                            </video>
-                        <br />
-                        <figure>
-                            <figcaption>Get Rick'd</figcaption>
-                            <audio controls src="https://github.com/tshneour/Lab2_Starter/raw/main/rick.mp3"></audio>
+                        <div class ='grid'>
+                            <img
+                                class="item"
+                                src="https://raw.githubusercontent.com/tshneour/Lab2_Starter/main/logo.jpg"
+                                alt="Bars representing a sorted list with 14! below" />
+                            <video controls width="250" class ='item'>
+                                <source src="https://github.com/tshneour/Lab2_Starter/raw/main/rick.mp4" type="video/mp4" />
+                                </video>
+                            <figure class="item">
+                                <figcaption>Get Rick'd</figcaption>
+                                <audio controls src="https://github.com/tshneour/Lab2_Starter/raw/main/rick.mp3"></audio>
                             </figure>
+                        </div>
                 </section>
                 <div id="Rick"></div>
                 <span style="opacity: 0;">GetRolled</span>
-                <form>
-                    <fieldset>
+                <form class="survey">
+                    <fieldset class="survey">
                         <textarea rows="2" cols="50">This is an epic survey please fill it out.
                             </textarea>
                             <br />
@@ -136,7 +135,7 @@
                       <input type="radio" id="Rizz" name="Ohio" value="M" />
                       <label for="Rizz">Rizz</label>
                         <br />
-                      <input type="button" value="Press if W Cotton-Eye Joe Skibidi" />
+                      <input class= 'button' type="button" value="Press if W Cotton-Eye Joe Skibidi" />
                         <br />
                         <label >2+2=3</label>
                       <input type="checkbox" value="2+2=3" />
